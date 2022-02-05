@@ -1,0 +1,407 @@
+snapshot:
+  created: 2022-01-31T19:19:56.721
+  database:
+    productVersion: 8.0.28
+    shortName: mysql
+    majorVersion: '8'
+    minorVersion: '0'
+    user: root@172.17.0.1
+    productName: MySQL
+    url: jdbc:mysql://localhost:3309/Curso
+  objects:
+    liquibase.structure.core.Catalog:
+    - catalog:
+        default: true
+        name: Curso
+        snapshotId: '8784100'
+    liquibase.structure.core.Column:
+    - column:
+        name: AUTHOR
+        nullable: false
+        order: 2!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784110
+        snapshotId: '8784112'
+        type:
+          characterOctetLength: 1020!{java.lang.Integer}
+          columnSize: 255!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 12!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: VARCHAR
+    - column:
+        name: COMMENTS
+        nullable: true
+        order: 9!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784110
+        snapshotId: '8784119'
+        type:
+          characterOctetLength: 1020!{java.lang.Integer}
+          columnSize: 255!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 12!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: VARCHAR
+    - column:
+        name: CONTEXTS
+        nullable: true
+        order: 12!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784110
+        snapshotId: '8784122'
+        type:
+          characterOctetLength: 1020!{java.lang.Integer}
+          columnSize: 255!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 12!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: VARCHAR
+    - column:
+        name: DATEEXECUTED
+        nullable: false
+        order: 4!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784110
+        snapshotId: '8784114'
+        type:
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 93!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: DATETIME
+    - column:
+        name: DEPLOYMENT_ID
+        nullable: true
+        order: 14!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784110
+        snapshotId: '8784124'
+        type:
+          characterOctetLength: 40!{java.lang.Integer}
+          columnSize: 10!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 12!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: VARCHAR
+    - column:
+        name: DESCRIPTION
+        nullable: true
+        order: 8!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784110
+        snapshotId: '8784118'
+        type:
+          characterOctetLength: 1020!{java.lang.Integer}
+          columnSize: 255!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 12!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: VARCHAR
+    - column:
+        name: EXECTYPE
+        nullable: false
+        order: 6!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784110
+        snapshotId: '8784116'
+        type:
+          characterOctetLength: 40!{java.lang.Integer}
+          columnSize: 10!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 12!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: VARCHAR
+    - column:
+        name: FILENAME
+        nullable: false
+        order: 3!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784110
+        snapshotId: '8784113'
+        type:
+          characterOctetLength: 1020!{java.lang.Integer}
+          columnSize: 255!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 12!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: VARCHAR
+    - column:
+        name: ID
+        nullable: false
+        order: 1!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784110
+        snapshotId: '8784111'
+        type:
+          characterOctetLength: 1020!{java.lang.Integer}
+          columnSize: 255!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 12!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: VARCHAR
+    - column:
+        name: ID
+        nullable: false
+        order: 1!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784125
+        snapshotId: '8784127'
+        type:
+          columnSize: 10!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 4!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: INT
+    - column:
+        name: LABELS
+        nullable: true
+        order: 13!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784110
+        snapshotId: '8784123'
+        type:
+          characterOctetLength: 1020!{java.lang.Integer}
+          columnSize: 255!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 12!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: VARCHAR
+    - column:
+        name: LIQUIBASE
+        nullable: true
+        order: 11!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784110
+        snapshotId: '8784121'
+        type:
+          characterOctetLength: 80!{java.lang.Integer}
+          columnSize: 20!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 12!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: VARCHAR
+    - column:
+        name: LOCKED
+        nullable: false
+        order: 2!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784125
+        snapshotId: '8784128'
+        type:
+          columnSize: 1!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: -7!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: BIT
+    - column:
+        name: LOCKEDBY
+        nullable: true
+        order: 4!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784125
+        snapshotId: '8784130'
+        type:
+          characterOctetLength: 1020!{java.lang.Integer}
+          columnSize: 255!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 12!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: VARCHAR
+    - column:
+        name: LOCKGRANTED
+        nullable: true
+        order: 3!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784125
+        snapshotId: '8784129'
+        type:
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 93!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: DATETIME
+    - column:
+        name: MD5SUM
+        nullable: true
+        order: 7!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784110
+        snapshotId: '8784117'
+        type:
+          characterOctetLength: 140!{java.lang.Integer}
+          columnSize: 35!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 12!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: VARCHAR
+    - column:
+        name: ORDEREXECUTED
+        nullable: false
+        order: 5!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784110
+        snapshotId: '8784115'
+        type:
+          columnSize: 10!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 4!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: INT
+    - column:
+        name: TAG
+        nullable: true
+        order: 10!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784110
+        snapshotId: '8784120'
+        type:
+          characterOctetLength: 1020!{java.lang.Integer}
+          columnSize: 255!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 12!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: VARCHAR
+    - column:
+        name: age
+        nullable: true
+        order: 5!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784102
+        snapshotId: '8784108'
+        type:
+          columnSize: 3!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: -6!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: TINYINT
+    - column:
+        name: firstname
+        nullable: true
+        order: 2!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784102
+        snapshotId: '8784105'
+        type:
+          characterOctetLength: 1020!{java.lang.Integer}
+          columnSize: 255!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 12!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: VARCHAR
+    - column:
+        autoIncrementInformation:
+          incrementBy: 1!{java.math.BigInteger}
+          startWith: 1!{java.math.BigInteger}
+        name: id
+        nullable: false
+        order: 1!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784102
+        snapshotId: '8784104'
+        type:
+          columnSize: 10!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 4!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: INT
+    - column:
+        name: lastname
+        nullable: true
+        order: 3!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784102
+        snapshotId: '8784106'
+        type:
+          characterOctetLength: 1020!{java.lang.Integer}
+          columnSize: 255!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 12!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: VARCHAR
+    - column:
+        name: twitter
+        nullable: true
+        order: 4!{java.lang.Integer}
+        relation: liquibase.structure.core.Table#8784102
+        snapshotId: '8784107'
+        type:
+          characterOctetLength: 60!{java.lang.Integer}
+          columnSize: 15!{java.lang.Integer}
+          columnSizeUnit: BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}
+          dataTypeId: 12!{java.lang.Integer}
+          radix: 10!{java.lang.Integer}
+          typeName: VARCHAR
+    liquibase.structure.core.Index:
+    - index:
+        columns:
+        - liquibase.structure.core.Column#8784127
+        name: PRIMARY
+        snapshotId: '8784126'
+        table: liquibase.structure.core.Table#8784125
+        unique: true
+    - index:
+        columns:
+        - liquibase.structure.core.Column#8784104
+        name: PRIMARY
+        snapshotId: '8784103'
+        table: liquibase.structure.core.Table#8784102
+        unique: true
+    liquibase.structure.core.PrimaryKey:
+    - primaryKey:
+        backingIndex: liquibase.structure.core.Index#8784126
+        columns:
+        - liquibase.structure.core.Column#8784127
+        name: PRIMARY
+        snapshotId: '8784131'
+        table: liquibase.structure.core.Table#8784125
+    - primaryKey:
+        backingIndex: liquibase.structure.core.Index#8784103
+        columns:
+        - liquibase.structure.core.Column#8784104
+        name: PRIMARY
+        snapshotId: '8784109'
+        table: liquibase.structure.core.Table#8784102
+    liquibase.structure.core.Schema:
+    - schema:
+        catalog: liquibase.structure.core.Catalog#8784100
+        default: true
+        name: Curso
+        snapshotId: '8784101'
+    liquibase.structure.core.Table:
+    - table:
+        columns:
+        - liquibase.structure.core.Column#8784111
+        - liquibase.structure.core.Column#8784112
+        - liquibase.structure.core.Column#8784113
+        - liquibase.structure.core.Column#8784114
+        - liquibase.structure.core.Column#8784115
+        - liquibase.structure.core.Column#8784116
+        - liquibase.structure.core.Column#8784117
+        - liquibase.structure.core.Column#8784118
+        - liquibase.structure.core.Column#8784119
+        - liquibase.structure.core.Column#8784120
+        - liquibase.structure.core.Column#8784121
+        - liquibase.structure.core.Column#8784122
+        - liquibase.structure.core.Column#8784123
+        - liquibase.structure.core.Column#8784124
+        default_tablespace: false
+        name: DATABASECHANGELOG
+        schema: liquibase.structure.core.Schema#8784101
+        snapshotId: '8784110'
+    - table:
+        columns:
+        - liquibase.structure.core.Column#8784127
+        - liquibase.structure.core.Column#8784128
+        - liquibase.structure.core.Column#8784129
+        - liquibase.structure.core.Column#8784130
+        default_tablespace: false
+        indexes:
+        - liquibase.structure.core.Index#8784126
+        name: DATABASECHANGELOGLOCK
+        primaryKey: liquibase.structure.core.PrimaryKey#8784131
+        schema: liquibase.structure.core.Schema#8784101
+        snapshotId: '8784125'
+    - table:
+        columns:
+        - liquibase.structure.core.Column#8784104
+        - liquibase.structure.core.Column#8784105
+        - liquibase.structure.core.Column#8784106
+        - liquibase.structure.core.Column#8784107
+        - liquibase.structure.core.Column#8784108
+        default_tablespace: false
+        indexes:
+        - liquibase.structure.core.Index#8784103
+        name: actor
+        primaryKey: liquibase.structure.core.PrimaryKey#8784109
+        schema: liquibase.structure.core.Schema#8784101
+        snapshotId: '8784102'
+  snapshotControl:
+    snapshotControl:
+      includedType:
+      - liquibase.structure.core.Catalog
+      - liquibase.structure.core.Column
+      - liquibase.structure.core.ForeignKey
+      - liquibase.structure.core.Index
+      - liquibase.structure.core.PrimaryKey
+      - liquibase.structure.core.Schema
+      - liquibase.structure.core.Sequence
+      - liquibase.structure.core.Table
+      - liquibase.structure.core.UniqueConstraint
+      - liquibase.structure.core.View
