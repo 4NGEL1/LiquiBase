@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd
+    http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.0.xsd ">
+
+    <changeSet  author="liquibase"  id="16">  
+    <createSequence  cacheSize="50"  
+            cycle="true"  
+            incrementBy="2"  
+            maxValue="1000000"  
+            minValue="10"   
+            schemaName="public"  
+            sequenceName="by2"  
+            startValue="10"/>  
+</changeSet>
+
+<changeSet  author="liquibase"  id="17">  
+    <createView  
+            encoding="UTF-8"  
+            fullDefinition="false"  
+            remarks="First 100 people"  
+            replaceIfExists="false"  
+            schemaName="public"  
+            viewName="v_person">select id, name from person where id &lt; 100</createView>   
+</changeSet>
+
+</databaseChangeLog>
