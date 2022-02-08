@@ -6,19 +6,16 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd
     http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.0.xsd ">
 
-<changeSet  author="liquibase"  id="1">  
-    <tagDatabase  tag="version1"/>  
-</changeSet>
-  <changeSet id="18" author="liquibase">
-        <createTable tableName="country1">
+   <changeSet id="19" author="liquibase">
+        <createTable tableName="country2">
             <column name="id" type="int">
                 <constraints primaryKey="true"/>
             </column>
             <column name="name" type="varchar(50)">
                 <constraints nullable="false"/>
             </column>
-            <column name="city1" type="varchar(50)"/>
-            <column name="city2" type="varchar(50)"/>
+            <column name="city3" type="varchar(50)"/>
+            <column name="city4" type="varchar(50)"/>
             <column name="address" type="varchar(30)"/>
         </createTable>
     </changeSet>
