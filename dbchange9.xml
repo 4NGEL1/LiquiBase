@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd
+    http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.0.xsd ">
+
+    <changeSet author="liquibase" id="11">
+        <createTable tableName="TABLE1" >
+            <column name="ID1" type="NUMBER(*, 0)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_DEPARTMENT54"/>
+            </column>
+            <column name="NAME2" type="VARCHAR2(50 BYTE)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="1" name="ACTIVE" type="NUMBER(1, 0)"/>
+        </createTable>
+    </changeSet>
+
+<changeSet author="liquibase" id="12">
+        <createTable tableName="TABLE2" >
+            <column name="ID2" type="NUMBER(*, 0)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_DEPARTMENT55"/>
+            </column>
+            <column name="NAME3" type="VARCHAR2(50 BYTE)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="1" name="ACTIVE" type="NUMBER(1, 0)"/>
+        </createTable>
+    </changeSet>
+
+ <changeSet author="liquibase" id="13">
+        <createTable tableName="TABLE1">
+            <column name="ID1" type="NUMBER(*, 0)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_DEPARTMENT54"/>
+            </column>
+            <column name="NAME2" type="VARCHAR2(50 BYTE)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="1" name="ACTIVE" type="NUMBER(1, 0)"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
