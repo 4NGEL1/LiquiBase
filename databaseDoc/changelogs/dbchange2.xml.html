@@ -1,0 +1,22 @@
+<html><body><pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;  
+&lt;databaseChangeLog  
+ xmlns="http://www.liquibase.org/xml/ns/dbchangelog"  
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+ xmlns:pro="http://www.liquibase.org/xml/ns/pro"  
+ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd
+      http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.5.xsd" changeLogId="32d0b766-c997-411f-989a-b4675c9830ce"&gt;
+
+    &lt;changeSet author="Angel" id="31012022-1"&gt;
+        &lt;createTable tableName="Prueba"&gt;
+            &lt;column autoIncrement="true" name="id" type="INTEGER"&gt;
+                &lt;constraints nullable="false" primaryKey="true" primaryKeyName="id_Alumno"/&gt;
+            &lt;/column&gt;
+            &lt;column name="firstname" type="VARCHAR(255)"/&gt;
+            &lt;column name="lastname" type="VARCHAR(255)"/&gt;
+            &lt;column name="twitter" type="VARCHAR(15)"/&gt;
+        &lt;/createTable&gt;
+    &lt;/changeSet&gt;
+
+&lt;/databaseChangeLog&gt;
+</pre></body></html>

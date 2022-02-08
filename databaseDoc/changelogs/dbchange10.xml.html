@@ -1,0 +1,25 @@
+<html><body><pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd
+    http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.0.xsd "&gt;
+
+      &lt;changeSet id="15" author="liquibase"&gt;
+        &lt;createTable tableName="person1"&gt;
+            &lt;column name="id" type="int"&gt;
+                &lt;constraints primaryKey="true"/&gt;
+            &lt;/column&gt;
+            &lt;column name="name" type="varchar(50)"&gt;
+                &lt;constraints nullable="false"/&gt;
+            &lt;/column&gt;
+            &lt;column name="address1" type="varchar(50)"/&gt;
+            &lt;column name="address2" type="varchar(50)"/&gt;
+            &lt;column name="city" type="varchar(30)"/&gt;
+        &lt;/createTable&gt;
+    &lt;/changeSet&gt;
+
+&lt;/databaseChangeLog&gt;
+</pre></body></html>

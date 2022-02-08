@@ -1,0 +1,32 @@
+<html><body><pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd
+    http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.0.xsd "&gt;
+
+    &lt;changeSet  author="liquibase"  id="16"&gt;  
+    &lt;createSequence  cacheSize="50"  
+            cycle="true"  
+            incrementBy="2"  
+            maxValue="1000000"  
+            minValue="10"   
+            schemaName="public"  
+            sequenceName="by2"  
+            startValue="10"/&gt;  
+&lt;/changeSet&gt;
+
+&lt;changeSet  author="liquibase"  id="17"&gt;  
+    &lt;createView  
+            encoding="UTF-8"  
+            fullDefinition="false"  
+            remarks="First 100 people"  
+            replaceIfExists="false"  
+            schemaName="public"  
+            viewName="v_person"&gt;select id, name from person where id &lt; 100&lt;/createView&gt;   
+&lt;/changeSet&gt;
+
+&lt;/databaseChangeLog&gt;
+</pre></body></html>
