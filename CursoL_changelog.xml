@@ -8,4 +8,10 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.l
 <include file="./dbchange2.xml"/>
 <include file="./dbchange3.xml"/>
 <include file="./dbchange4.xml"/>
+<include file="./dbchange5.xml"/>
+<!-- <include file="./dbchange9.xml"/> -->
+<!-- <include file="./dbchange9.xml"/> -->
+<include file="./dbchange10.xml"/>
+<include file="./dbchange11.xml"/>
+<include file="./dbchange12.xml"/>
 </databaseChangeLog>
